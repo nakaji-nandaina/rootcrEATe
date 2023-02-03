@@ -17,6 +17,13 @@ public class SetCard : MonoBehaviour
     {
         
     }
+
+    public void SetNew()
+    {
+        exist = false;
+        rock = false;
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Card"&&exist==true)
